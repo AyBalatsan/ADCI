@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lampadari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__burger">
+      <span class="page-header__burger-span"></span>
+    </div>
+    <a class="page-header__logo" href="#">
+      <picture class="page-header__block-img">
+        <source srcset="img/logo.png" media="(min-width: 1270px)">
+        <source srcset="img/logo.png" media="(min-width: 768px)" >
+        <img src="img/minlogo.png" alt="logo">
+      </picture>
+    </a>
+    <a class="page-header__avtor" href="#"><img src="img/lock.svg" alt="lock" height="24"></a>
+    <div class="authorization page-header__authorization ">
+      <h2 class="authorization__title">AREA RISERVATA</h2>
+      <a class="authorization__close" href="#"><span class="authorization__button-left"></span><span class="authorization__button-right"></span></a>
+      <div class="authorization__wrapper">
+        <div class="login">
+          <h3 class="login__title">ACCEDI</h3>
+          <form class="login__form" action="">
+            <input class="login__data" type="email" name="email-login" id="email-login" placeholder="E-mail">
+            <input class="login__data" type="password" name="password-login" id="password-login" placeholder="Password">
+            <button class="login__button">accedi</button>
+            <a class="login__reminder" href="">Password dimenticata</a>
+          </form>
+        </div>
+        <div class="registration">
+        <h3 class="registration__title">REGISTRATI</h3>
+        <form class="registration__form" action="">
+          <input class="registration__data" type="text" name="name-registration" id="name-registration" placeholder="Nome">
+          <input class="registration__data" type="text" name="surname-registration" id="surname-registration" placeholder="Cognome">
+          <input class="registration__data" type="email" name="email-registration" id="email-registration" placeholder="E-mail">
+          <input class="registration__data" type="password" name="password-registration" id="password-registration" placeholder="Password">
+          <input class="registration__checkbox" type="checkbox" name="agreement-registration" id="agreement-registration">
+          <label class="registration__checkbox-desc" for="agreement-registration">Acconsento al trattamento dei dati</label><br>
+          <input class="registration__checkbox" type="checkbox" name="news-registration" id="news-registration">
+          <label class="registration__checkbox-desc" for="news-registration">Mi iscrivo alla Newsletter</label>
+          <button class="registration__button">Iscriviti</button>
+        </form>
+        </div>
+      </div>
+    </div>
+    <nav class="navigation page-header__navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">home</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">azienda</a>
+          <ul class="navigation__sublist">
+            <li class="navigation__subitem"><a class="navigation__sublink" href="">storia</a></li>
+            <li class="navigation__subitem"><a class="navigation__sublink" href="">mm design</a></li>
+            <li class="navigation__subitem"><a class="navigation__sublink" href="">designer</a></li>
+            <li class="navigation__subitem"><a class="navigation__sublink" href="">certificazioni</a></li>
+          </ul>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">collezioni</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">news</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">contatti</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="content">
+      <h1 class="visually-hidden">Grandi mobili per la tua casa</h1>
+      <div class="slayder">
+        <img class="slayder__item" src="img/bg.jpg" alt="background">
+        <img class="slayder__item" src="img/bg.jpg" alt="background">
+        <img class="slayder__item" src="img/bg.jpg" alt="background">
+        <div class="block-text">
+          <h2 class="block-text__title">Lampadari contemporanei</h2>
+          <p class="block-text__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+        </div>
+        <div class="toggle-round">
+          <div class="toggle-round__item"></div>
+          <div class="toggle-round__item toggle-round__item--active"></div>
+          <div class="toggle-round__item"></div>
+        </div>
+        <div class="toggle"><span class="toggle__button-left"></span><span class="toggle__button-right"></span></div>
+        <ul class="inform-block">
+          <h3 class="inform-block__special-title">Blocco informazioni</h3>
+          <li class="inform-block__item inform-block__item--color-first">
+            <h3 class="inform-block__title">Stai pensando ad un progetto?</h3>
+            <p class="inform-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a href="#" class="inform-block__link inform-block__link--acolor">Approfondisci</a>
+          </li>
+          <li class="inform-block__item inform-block__item--color-second">
+            <h3 class="inform-block__title">Vi aspettiamo alla fiera Euroluce</h3>
+            <p class="inform-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a href="#" class="inform-block__link">Approfondisci</a>
+          </li>
+          <li class="inform-block__item inform-block__item--color-third">
+            <h3 class="inform-block__title">Scopri la nuova collezione</h3>
+            <p class="inform-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a href="#" class="inform-block__link inform-block__link--color">Approfondisci</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="other-information">
+        <ul class="other-information__list">
+          <li class="other-information__item">
+            <h3 class="other-information__title">Lampadari made in italy</h3>
+            <p class="other-information__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+          </li>
+          <li class="other-information__item">
+            <h3 class="other-information__title">Lampadari artigianali</h3>
+            <p class="other-information__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+          </li>
+          <li class="other-information__item">
+            <h3 class="other-information__title">45 anni di esperienza</h3>
+            <p class="other-information__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <form class="newsletter__form" action="">
+          <h3 class="newsletter__title">NEWSLETTER</h3>
+          <input class="newsletter__data" type="text" name="nick-news" id="nick-field" placeholder="Nome e Cognome">
+          <input class="newsletter__data" type="email" name="Email-news" id="news-field" placeholder="Email">
+          <div class="newsletter__block-box">
+            <input class="newsletter__checkbox" type="checkbox" name="agreement" id="agreement-field">
+            <label class="newsletter__checkbox-desc" for="agreement-field">Acconsento al trattamento dei dati</label>
+          </div>
+          <button class="newsletter__button">Iscriviti</button>
+        </form>
+      </div>
+      <div class="feedback">
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <p class="feedback__title">MMLAMPADARI srl</p>
+          </li>
+          <li class="feedback__item">
+            <p class="feedback__title">Via Feltrina 00</p>
+          </li>
+          <li class="feedback__item">
+            <p class="feedback__title">31111 Pederobba (TV)</p>
+          </li>
+          <li class="feedback__item">
+            <p class="feedback__title">0423.123456</p>
+          </li>
+          <li class="feedback__item">
+            <p class="feedback__title">info@mmlampadari.mm</p>
+          </li>
+          <li class="feedback__item">
+            <p class="feedback__title">P.IVA 04123456789</p>
+          </li>
+        </ul>
+      </div>
+      <div class="social-lang">
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#"><img src="img/fb-m.svg" alt="facebook" width="24" height="24"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"><img src="img/instagram-m.svg" alt="instagram" width="24" height="24"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"><img src="img/pint-m.svg" alt="pinterest" width="24" height="24"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="lang">
+          <ul class="lang__list">
+            <li class="lang__item">
+              <a class="lang__link" href="#">ita</a>
+            </li>
+            <li class="lang__item">
+              <a class="lang__link" href="#">eng</a>
+            </li>
+            <li class="lang__item">
+              <a class="lang__link" href="#">deu</a>
+            </li>
+            <li class="lang__item">
+              <a class="lang__link" href="#">pyc</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+  </main>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.feedback {
+  margin-top: 25px;
+  @media @tablet {
+    margin-top: 40px;
+  }
+}
+.feedback__list {
+  .li-none;
+  text-align: center;
+  @media @tablet {
+    display: grid;
+    padding: 0 10px;
+    justify-items: center;
+    align-items:center;
+    justify-content:space-between;
+    grid-gap: 15px 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: -15px;
+  }
+  @media @desktop{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-top: 0;
+  }
+}
+.feedback__item {
+
+}
+.feedback__title {
+  margin: 10px 0 0;
+  @media @tablet {
+    margin-top: 0;
+    font-size: 12px;
+  }
+}
+

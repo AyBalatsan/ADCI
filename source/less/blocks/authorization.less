@@ -1,0 +1,163 @@
+.authorization {
+  display: none;
+  margin-top: 15px;
+  @media @tablet {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 595px;
+    height: 420px;
+    background-color: @bgc;
+  }
+}
+.authorization__title {
+  display: none;
+  @media @tablet {
+    display: block;
+    text-align: center;
+  }
+}
+.authorization__close {
+  position: absolute;
+  display: block;
+  top: 12px;
+  right: 14px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.authorization__button-left{
+  @media @tablet {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 25px;
+    height: 2px;
+    background-color: @basic-white;
+    transform: rotate(-45deg);
+  }
+}
+.authorization__button-right{
+  @media @tablet {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 25px;
+    height: 2px;
+    background-color: @basic-white;
+    transform: rotate(45deg);
+  }
+}
+.authorization__wrapper{
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.login {
+  margin-bottom: 16px;
+  @media @tablet {
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+.login__title {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+.login__form {
+  display: none;
+  @media @tablet {
+    display: block;
+  }
+}
+.login__data {
+  display: block;
+  margin: 15px auto 10px;
+  border: none;
+  border-radius: 5px;
+  height: 36px;
+  min-width: 280px;
+  padding-left: 10px;
+}
+
+.login__button {
+  display: block;
+  margin: 15px auto;
+  height: 36px;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  @media @tablet {
+    &:hover{
+      background-color: @navigation-hover;
+      color: @basic-black;
+    }
+    &:active{
+      background-color: @navigation-push;
+      color: @basic-black;
+    }
+  }
+}
+.login__reminder {
+  .a-none (@other-title)
+}
+.registration {
+  @media @tablet {
+    display: block;
+    padding-right: 10px;
+  }
+}
+.registration__title {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+.registration__form {
+  display: none;
+  @media @tablet {
+    display: block;
+  }
+}
+.registration__data {
+  display: block;
+  margin: 15px auto 10px;
+  border: none;
+  border-radius: 5px;
+  height: 36px;
+  min-width: 280px;
+  padding-left: 10px;
+}
+.registration__checkbox {
+}
+.registration__checkbox-desc {
+  font-size: 12px;
+}
+.registration__button {
+  display: block;
+  margin: 15px auto;
+  height: 36px;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  @media @tablet {
+    &:hover{
+      background-color: @navigation-hover;
+      color: @basic-black;
+    }
+    &:active{
+      background-color: @navigation-push;
+      color: @basic-black;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.lang {
+  margin: 15px 0 10px;
+
+}
+.lang__list {
+  display: flex;
+  justify-content: center;
+  .li-none;
+  @media @tablet {
+
+  }
+  @media @desktop{
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+}
+.lang__item {
+  &+&{
+    margin-left: 36px;
+  }
+  @media @tablet {
+    &+&{
+      margin-left: 0;
+      padding-left: 6px;
+
+    }
+    &+&::before{
+      content: '|';
+    }
+
+  }
+}
+.lang__link {
+  .a-none (@basic-white);
+}
