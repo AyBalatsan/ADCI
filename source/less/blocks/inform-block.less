@@ -1,0 +1,107 @@
+
+.inform-block {
+  .li-none;
+  @media @tablet {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+  }
+}
+// .inform-block__special-title{
+//   text-align: center;
+//   text-transform: uppercase;
+//   font-family: 'PlayfairDisplay';
+//   font-size: 24px;
+//   color: @navigation-hover;
+//   margin: 15px auto;
+//   @media @tablet {
+//     .visually-hidden;
+//   }
+// }
+.inform-block__item {
+  padding: 15px 0;
+  &--color-first{
+    background-color: @info-bgc1;
+    color: @info-text;
+  }
+  &--color-second{
+    background-color: @info-bgc2;
+    color: @info-text;
+  }
+  &--color-third{
+    background-color: @info-bgc3;
+    color: @info-text-light;
+  }
+  @media @tablet {
+    padding: 0;
+    position: relative;
+    max-height: 180px;
+    width: 33.333%;
+  }
+}
+.inform-block__title {
+  font-family: 'PlayfairDisplay';
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  @media @tablet {
+    position: relative;
+    text-align: start;
+    min-height: 46px;
+    margin-left:  16px;
+  }
+}
+.inform-block__subtitle {
+  font-family: 'Myriad Pro';
+  text-align: center;
+  @media @tablet {
+    text-align: start;
+    margin-left:  16px;
+    margin-bottom: 40px;
+    min-height: 54px;
+  }
+  @media @desktop {
+    margin-bottom: 50px;
+  }
+}
+.inform-block__link {
+  display: block;
+  margin: 15px auto;
+  width: 280px;
+  height: 36px;
+  background-color: @block-text-bgc;
+  border-radius: 5px;
+  .a-none (black);
+  text-align: center;
+  padding-top: 7px;
+  font-size: 22px;
+  font-family: 'Myriad Pro';
+  box-shadow: 0 0 5px 2px grey;
+  @media @tablet {
+    display: inline;
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    cursor: pointer;
+    text-transform: inherit;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 18px;
+    width: 106px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    &--color{
+      color: inherit;
+    }
+    &--acolor{
+      color: @basic-white;
+    }
+    &:hover{
+      border-bottom: 1px solid;
+      border-color: initial;
+    }
+  }
+}

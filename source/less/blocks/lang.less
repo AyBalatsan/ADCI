@@ -32,4 +32,15 @@
 }
 .lang__link {
   .a-none (@basic-white);
+  @media @tablet {
+    &:hover{
+      color: @navigation-hover;
+    }
+    &:focus{
+      color: @navigation-focus;
+    }
+    &:active{
+      color: @navigation-push;
+    }
+  }
 }

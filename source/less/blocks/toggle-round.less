@@ -1,0 +1,25 @@
+.toggle-round {
+  display: none;
+  @media @tablet {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+  }
+}
+.toggle-round__item {
+  width: 14px;
+  height: 14px;
+  background-color: @basic-white;
+  border-radius: 50%;
+  border: 1px solid @basic-black;
+  position: relative;
+  & + & {
+    margin-left: 10px;
+  }
+}
+.toggle-round__item--active{
+  background-color: @slider-button;
+}
