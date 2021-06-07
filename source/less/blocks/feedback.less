@@ -1,7 +1,10 @@
 .feedback {
   margin-top: 25px;
   @media @tablet {
-    margin-top: 40px;
+    margin-top: 25px;
+  }
+  @media @desktop{
+    margin-top: 30px;
   }
 }
 .feedback__list {
@@ -16,17 +19,20 @@
     grid-gap: 15px 25px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-top: -15px;
   }
   @media @desktop{
     display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
+    justify-content: flex-start;
+    padding: 0;
     margin-top: 0;
   }
 }
 .feedback__item {
-
+  @media @desktop{
+    & + & {
+      margin-left: -8px;
+    }
+  }
 }
 .feedback__title {
   margin: 10px 0 0;
@@ -34,5 +40,6 @@
     margin-top: 0;
     font-size: 12px;
   }
+
 }
 

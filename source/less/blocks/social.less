@@ -1,10 +1,18 @@
 .social {
   margin-top: 36px;
+  @media @desktop{
+    margin-top: 22px;
+    margin-left: 5px;
+  }
 }
+
 .social__list {
   .li-none;
   display: flex;
   justify-content: center;
+  @media @desktop{
+    justify-content: flex-start;
+  }
 }
 .social__item {
   display: block;
@@ -21,10 +29,23 @@
     height: 24px;
     border: none;
   }
+  @media @desktop{
+    & + & {
+      margin-left: 2px;
+    }
+  }
 }
 .social__link {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.social__img{
+  width: 24px;
+  height: 24px;
+  @media @desktop{
+    width: 18px;
+    height: 18px;
+  }
 }

@@ -2,6 +2,9 @@
   @media @tablet {
     display: block;
     padding-right: 10px;
+    @media @desktop {
+      padding-right: 76px;
+    }
   }
 }
 .registration__title {
@@ -9,11 +12,21 @@
   text-align: center;
   font-size: 22px;
   cursor: pointer;
+  @media @desktop {
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font-size:  18px;
+  }
 }
 .registration__form {
   display: none;
   @media @tablet {
     display: block;
+  }
+  @media @desktop {
+    width: 185px;
+    overflow: hidden;
   }
 }
 .registration__data {
@@ -24,11 +37,28 @@
   height: 36px;
   min-width: 280px;
   padding-left: 10px;
+  @media @desktop {
+    min-width: 160px;
+    height: 30px;
+    margin: 0;
+    border-radius: 0;
+    & + & {
+      margin-top: 12px;
+    }
+  }
 }
 .registration__checkbox {
+  @media @desktop {
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+  }
 }
 .registration__checkbox-desc {
   font-size: 12px;
+  @media @desktop{
+    font-size: 8px;
+  }
 }
 .registration__button {
   display: block;
@@ -52,5 +82,13 @@
       background-color: @navigation-push;
       color: @basic-black;
     }
+  }
+  @media @desktop {
+    width: 185px;
+    height: 30px;
+    margin: 0;
+    border-radius: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }

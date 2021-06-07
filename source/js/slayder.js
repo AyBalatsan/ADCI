@@ -10,14 +10,18 @@ function showSlides(slideIndex) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace("toggle-round__item--active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " toggle-round__item--active";
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " toggle-round__item--active";
+  }
 }
-
-showSlides(slideIndex);
 
 dots.forEach((item) =>
   item.addEventListener('click', () => {
     showSlides(item.id);
   })
 );
+
+showSlides(slideIndex);
+window.addEventListener('resize', showSlides(slideIndex));
+window.onresize = showSlides(slideIndex);

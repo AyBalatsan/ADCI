@@ -20,6 +20,10 @@
   }
   @media @desktop {
     width: 1200px;
+    grid-template-areas:
+    'logo avtor'
+    'logo navigation';
+    grid-template-columns: 35% 65%;
   }
 }
 .page-header__block-img{
@@ -27,6 +31,10 @@
     position: absolute;
     top: 12px;
     left: 12px;
+  }
+  @media @desktop {
+    top: 32px;
+    left: 1px;
   }
 }
 .page-header__burger{
@@ -62,6 +70,20 @@
     &:active{
       color: @navigation-push;
     }
+  }
+  @media @desktop {
+    top: 11px;
+    right: -5px;
+    &::before{
+      top: 0px;
+      right: -8px;
+    }
+  }
+}
+.page-header__lock{
+  height: 24px;
+  @media @desktop {
+    height: 16px;
   }
 }
 .page-header__navigation{

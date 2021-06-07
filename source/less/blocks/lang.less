@@ -1,6 +1,8 @@
 .lang {
   margin: 15px 0 10px;
-
+  @media @desktop{
+    margin: 6px 0 10px;
+  }
 }
 .lang__list {
   display: flex;
@@ -12,6 +14,7 @@
   @media @desktop{
     margin-top: 20px;
     margin-right: 20px;
+    justify-content: flex-end;
   }
 }
 .lang__item {
@@ -42,5 +45,8 @@
     &:active{
       color: @navigation-push;
     }
+  }
+  @media @desktop{
+    font-size: 12px;
   }
 }

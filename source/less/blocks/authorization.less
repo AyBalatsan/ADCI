@@ -11,12 +11,17 @@
     height: 420px;
     background-color: @bgc;
   }
+  @media @desktop {
+    top: 430px;
+    height: 360px;
+  }
 }
 .authorization__title {
   display: none;
   @media @tablet {
     display: block;
     text-align: center;
+    margin: 10px 0 0 0;
   }
 }
 .authorization__close {
@@ -27,6 +32,10 @@
   cursor: pointer;
   width: 20px;
   height: 20px;
+  @media @desktop {
+    width: 29px;
+    height: 20px;
+  }
 }
 .authorization__button-left{
   @media @tablet {
@@ -38,6 +47,9 @@
     background-color: @basic-white;
     transform: rotate(-45deg);
   }
+  @media @desktop {
+    width: 30px;
+  }
 }
 .authorization__button-right{
   @media @tablet {
@@ -48,6 +60,9 @@
     height: 2px;
     background-color: @basic-white;
     transform: rotate(45deg);
+  }
+  @media @desktop {
+    width: 30px;
   }
 }
 .authorization__wrapper{

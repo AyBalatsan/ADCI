@@ -4,17 +4,31 @@
     margin: 0;
     padding-left: 10px;
   }
+  @media @desktop {
+   padding-left: 78px;
+  }
 }
 .login__title {
   margin: 0;
   text-align: center;
   font-size: 22px;
   cursor: pointer;
+  @media @desktop {
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font-size:  18px;
+
+  }
 }
 .login__form {
   display: none;
   @media @tablet {
     display: block;
+  }
+  @media @desktop {
+    width: 185px;
+    overflow: hidden;
   }
 }
 .login__data {
@@ -25,6 +39,15 @@
   height: 36px;
   min-width: 280px;
   padding-left: 10px;
+  @media @desktop {
+    min-width: 160px;
+    height: 30px;
+    margin: 0;
+    border-radius: 0;
+    & + & {
+      margin-top: 6px;
+    }
+   }
 }
 
 .login__button {
@@ -46,7 +69,19 @@
       color: @basic-black;
     }
   }
+  @media @desktop {
+    width: 185px;
+    height: 30px;
+    margin: 0;
+    border-radius: 0;
+    margin-top: 16px;
+    margin-bottom: 8px;
+   }
 }
 .login__reminder {
-  .a-none (@other-title)
+  .a-none (@other-title);
+  @media @desktop {
+    text-transform: none;
+    font-size: 12px;
+   }
 }

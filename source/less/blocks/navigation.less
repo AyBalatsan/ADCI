@@ -7,6 +7,10 @@
     margin-top: 0;
     padding: 12px;
   }
+  @media @desktop {
+   padding: 0 0 24px;
+   margin-right: -12px;
+  }
 }
 .navigation__list {
   .li-none;
@@ -14,8 +18,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-
   }
+  @media @desktop {
+    justify-content: flex-end;
+   }
 }
 .navigation__item {
   text-align: center;
@@ -28,6 +34,9 @@
       margin-top: 0;
     }
   }
+  @media @desktop {
+    margin-left: 31px;
+  }
 }
 .navigation__link {
   .a-none (@navigation);
@@ -35,6 +44,7 @@
   font-weight: 700;
   font-family: 'OpenSans';
   @media @tablet {
+    font-family: 'Myriad Pro';
     &:hover{
       color: @navigation-hover;
     }
@@ -45,6 +55,12 @@
       color: @navigation-push;
     }
   }
+  @media @desktop {
+    font-size: 18px;
+  }
+}
+.navigation__link--active{
+  color: @navigation-focus;
 }
 .navigation__sublist{
   .li-none;
@@ -55,6 +71,7 @@
     position: absolute;
     margin-top: 0;
     padding: 10px;
+    top: 42px;
     left: -10px;
     z-index: 2;
     &:hover{
