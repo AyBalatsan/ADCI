@@ -1,7 +1,7 @@
 {
-  "name": "BelPay",
+  "name": "ADCI",
   "private": true,
-  "description": "BelPay",
+  "description": "ADCI",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",
