@@ -1,0 +1,94 @@
+.registration {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-right: 10px;
+    @media (min-width: $desktop-width) {
+      padding-right: 76px;
+    }
+  }
+}
+.registration__title {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font-size:  18px;
+  }
+}
+.registration__form {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+  @media (min-width: $desktop-width) {
+    width: 185px;
+    overflow: hidden;
+  }
+}
+.registration__data {
+  display: block;
+  margin: 15px auto 10px;
+  border: none;
+  border-radius: 5px;
+  height: 36px;
+  min-width: 280px;
+  padding-left: 10px;
+  @media (min-width: $desktop-width) {
+    min-width: 160px;
+    height: 30px;
+    margin: 0;
+    border-radius: 0;
+    & + & {
+      margin-top: 12px;
+    }
+  }
+}
+.registration__checkbox {
+  @media (min-width: $desktop-width) {
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+  }
+}
+.registration__checkbox-desc {
+  font-size: 12px;
+  @media (min-width: $desktop-width){
+    font-size: 8px;
+  }
+}
+.registration__button {
+  display: block;
+  margin: 15px auto;
+  height: 36px;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  @media (min-width: $tablet-width) {
+    &:hover{
+      background-color: $navigation-hover;
+      color: $basic-black;
+    }
+    &:focus{
+      background-color: $navigation-focus;
+      color: $basic-black;
+    }
+    &:active{
+      background-color: $navigation-push;
+      color: $basic-black;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    width: 185px;
+    height: 30px;
+    margin: 0;
+    border-radius: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}

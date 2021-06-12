@@ -1,0 +1,16 @@
+.slayder {
+  @media (min-width: $tablet-width) {
+    overflow:hidden;
+    position: relative;
+  }
+}
+.slayder__item{
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+    object-fit: cover;
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+  }
+}

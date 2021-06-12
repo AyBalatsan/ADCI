@@ -1,0 +1,52 @@
+.lang {
+  margin: 15px 0 10px;
+  @media (min-width: $desktop-width){
+    margin: 6px 0 10px;
+  }
+}
+.lang__list {
+  display: flex;
+  justify-content: center;
+  @extend %li-none;
+  @media (min-width: $tablet-width) {
+
+  }
+  @media (min-width: $desktop-width){
+    margin-top: 20px;
+    margin-right: 20px;
+    justify-content: flex-end;
+  }
+}
+.lang__item {
+  &+&{
+    margin-left: 36px;
+  }
+  @media (min-width: $tablet-width) {
+    &+&{
+      margin-left: 0;
+    }
+    &+&::before{
+      content: '|';
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+
+  }
+}
+.lang__link {
+  @include a-none ($basic-white);
+  @media (min-width: $tablet-width) {
+    &:hover{
+      color: $navigation-hover;
+    }
+    &:focus{
+      color: $navigation-focus;
+    }
+    &:active{
+      color: $navigation-push;
+    }
+  }
+  @media (min-width: $desktop-width){
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,44 @@
+.block-text {
+  font-family: 'PlayfairDisplay';
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    right: 0;
+    width: 510px;
+    height: 140px;
+    opacity: 0.7;
+    background-color: $block-text-bgc;
+  }
+  @media (min-width: $desktop-width) {
+    top: 37%;
+  }
+}
+.block-text__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 15px auto 0;
+  color: $navigation-hover;
+  @media (min-width: $tablet-width) {
+    color: $block-text;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    font-style: italic;
+    margin: 17px 0 0 -5px;
+  }
+}
+.block-text__subtitle {
+  text-align: center;
+  margin: 12px auto 0;
+  font-size: 20px;
+  @media (min-width: $tablet-width) {
+    color: $block-text;
+    text-align: start;
+    padding-left: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 22px 0 0;
+    width: 450px;
+  }
+}

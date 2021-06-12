@@ -1,0 +1,122 @@
+.navigation {
+  display: none;
+  margin-top: 15px;
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-width: 768px;
+    margin-top: 0;
+    padding: 12px;
+  }
+  @media (min-width: $desktop-width) {
+   padding: 0 0 24px;
+   margin-right: -12px;
+  }
+}
+.navigation__list {
+  @extend %li-none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+   }
+}
+.navigation__item {
+  text-align: center;
+  position: relative;
+  & + &{
+    margin-top: 12px;
+  }
+  @media (min-width: $tablet-width) {
+    & + & {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 31px;
+  }
+}
+.navigation__link {
+  @include a-none ($navigation);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'OpenSans';
+  @media (min-width: $tablet-width) {
+    font-family: 'Myriad Pro';
+    &:hover{
+      color: $navigation-hover;
+    }
+    &:focus{
+      color: $navigation-focus;
+    }
+    &:active{
+      color: $navigation-push;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+.navigation__link--active{
+  color: $navigation-focus;
+}
+.navigation__sublist{
+  @extend %li-none;
+  display: none;
+  margin-top: 12px;
+  background-color: $bgc;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin-top: 0;
+    padding: 10px;
+    top: 42px;
+    left: -10px;
+    z-index: 2;
+    &:hover{
+      display: block;
+    }
+  }
+}
+.navigation__subitem {
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    margin: 0 0 6px;
+  }
+  & + &{
+    margin-top: 12px;
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+      padding-top: 5px;
+      border-top: 1px solid $basic-white;
+    }
+  }
+}
+.navigation__sublink {
+  @include a-none ($navigation-hover);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'OpenSans';
+  @media (min-width: $tablet-width) {
+    color: $basic-white;
+    font-size: 16px;
+    &+&{
+      border-bottom: 1px solid $basic-white;
+    }
+    &:hover{
+      color: $navigation-hover;
+    }
+    &:focus{
+      color: $navigation-focus;
+    }
+    &:active{
+      color: $navigation-push;
+    }
+  }
+}
+
+.navigation__item--active .navigation__sublist{
+  display: block;
+}

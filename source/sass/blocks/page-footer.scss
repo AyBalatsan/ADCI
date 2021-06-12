@@ -1,0 +1,44 @@
+.page-footer {
+  @media (min-width: $tablet-width) {
+  display: grid;
+  grid-template-rows: auto 90px;
+  grid-template-columns: 70% 30%;
+  grid-template-areas:
+    'info newsletter'
+    'feed sl';
+    @media (min-width: $desktop-width){
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-template-rows: auto 60px;
+      grid-template-columns: 73% 27%;
+    }
+  }
+}
+.other-information {
+  @media (min-width: $tablet-width) {
+    grid-area: info;
+  }
+}
+.newsletter {
+  @media (min-width: $tablet-width) {
+    grid-area: newsletter;
+  }
+}
+.feedback {
+  @media (min-width: $tablet-width) {
+    grid-area: feed;
+  }
+}
+.page-footer__social-lang {
+  @media (min-width: $tablet-width) {
+    grid-area: sl;
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+  }
+  @media (min-width: $desktop-width){
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
