@@ -2,19 +2,22 @@
   display: none;
   margin-top: 15px;
   @media (min-width: $tablet-width) {
-    position: absolute;
+    position: fixed;
     top: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
     width: 595px;
     height: 420px;
     background-color: $bgc;
+    z-index: 10;
   }
   @media (min-width: $desktop-width) {
     top: 430px;
     height: 360px;
   }
+}
+.authorization--active {
+  display: block;
 }
 .authorization__title {
   display: none;

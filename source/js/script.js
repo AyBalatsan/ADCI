@@ -106,29 +106,19 @@ const registrationForm = document.querySelector('.registration__form');
 const header = document.querySelector('.page-header');
 const main = document.querySelector('.page-main');
 
-lock.addEventListener('click', ()=>{
-  if(authorization.style.display === 'none'){
-    authorization.style.display = 'block';
-  }
-  else{
-    authorization.style.display = 'none';
-
-  }
+lock.addEventListener('click', (evt)=>{
+  evt.preventDefault();
+  authorization.classList.toggle('authorization--active');
 });
 
-close.addEventListener('click', ()=>{
-  authorization.style.display = 'none';
+close.addEventListener('click', (evt)=>{
+  evt.preventDefault();
+  authorization.classList.toggle('authorization--active');
 });
 
-const openForm = (title, form) => {
-  title.addEventListener('click', () => {
-    if(form.style.display === 'none'){
-      form.style.display = 'block';
-    }
-    else{
-      form.style.display = 'none';
-    }
+document.querySelectorAll('.authorization__name-title').forEach((item) =>
+  item.addEventListener('click', () => {
+    const parent = item.parentNode;
+    parent.classList.toggle('visible');
   })
-}
-openForm(login, loginForm);
-openForm(registration, registrationForm);
+);
