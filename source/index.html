@@ -63,9 +63,8 @@
           <div class="toggle-round__item" id="2"></div>
           <div class="toggle-round__item" id="3"></div>
         </div>
-        <div class="toggle"><span class="toggle__button-left"></span><span class="toggle__button-right"></span></div>
+        <div class="toggle"><span class="toggle__button toggle__button--left"></span><span class="toggle__button toggle__button--right"></span></div>
         <ul class="inform-block">
-          <!-- <h3 class="inform-block__special-title">Blocco informazioni</h3> -->
           <li class="inform-block__item inform-block__item--color-first">
             <h3 class="inform-block__title">Stai pensando ad un progetto?</h3>
             <p class="inform-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
@@ -168,12 +167,12 @@
       </div>
     </div>
   </footer>
-  <div class="authorization page-header__authorization ">
+  <section  class="authorization">
     <h2 class="authorization__title">AREA RISERVATA</h2>
-    <a class="authorization__close" href="#"><span class="authorization__button-left"></span><span class="authorization__button-right"></span></a>
+    <a class="authorization__close" href="#"><span class="authorization__close-button authorization__close-button--left"></span><span class="authorization__close-button authorization__close-button--right"></span></a>
     <div class="authorization__wrapper">
       <div class="login">
-        <h3 class="login__title authorization__name-title">ACCEDI</h3>
+        <h3 class="login__title">ACCEDI</h3>
         <form class="login__form" action="#">
           <input class="login__data" type="email" name="email-login" id="email-login" placeholder="E-mail">
           <input class="login__data" type="password" name="password-login" id="password-login" placeholder="Password">
@@ -182,7 +181,7 @@
         </form>
       </div>
       <div class="registration">
-      <h3 class="registration__title authorization__name-title">REGISTRATI</h3>
+      <h3 class="registration__title">REGISTRATI</h3>
       <form class="registration__form" action="#">
         <input class="registration__data" type="text" name="name-registration" id="name-registration" placeholder="Nome">
         <input class="registration__data" type="text" name="surname-registration" id="surname-registration" placeholder="Cognome">
@@ -196,7 +195,8 @@
       </form>
       </div>
     </div>
-  </div>
-  <script src="js/script.min.js"></script>
+  </section>
+  <!-- <div class="after-modal"></div> -->
+  <script src="js/script.js" type="module"></script>
 </body>
 </html>

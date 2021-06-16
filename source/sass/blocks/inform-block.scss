@@ -1,13 +1,18 @@
-
 .inform-block {
   @extend %li-none;
   @media (min-width: $tablet-width) {
-    display: none;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
     z-index: 2;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 700ms;
   }
   @media (min-width: $desktop-width){
     width: 1200px;

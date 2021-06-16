@@ -1,10 +1,8 @@
 .registration {
   @media (min-width: $tablet-width) {
-    display: block;
-    padding-right: 10px;
-    @media (min-width: $desktop-width) {
-      padding-right: 76px;
-    }
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop-width) {
   }
 }
 .registration__title {
@@ -20,17 +18,13 @@
   }
 }
 .registration__form {
-  display: none;
+  display: block;
   @media (min-width: $tablet-width) {
-    display: block;
   }
   @media (min-width: $desktop-width) {
     width: 185px;
     overflow: hidden;
   }
-}
-.visible .registration__form {
-  display: block;
 }
 .registration__data {
   display: block;
@@ -38,7 +32,7 @@
   border: none;
   border-radius: 5px;
   height: 36px;
-  min-width: 280px;
+  min-width: 86%;
   padding-left: 10px;
   @media (min-width: $desktop-width) {
     min-width: 160px;
@@ -51,10 +45,15 @@
   }
 }
 .registration__checkbox {
+  margin-left: 10%;
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
   @media (min-width: $desktop-width) {
     width: 10px;
     height: 10px;
     margin-top: 10px;
+
   }
 }
 .registration__checkbox-desc {
@@ -67,12 +66,13 @@
   display: block;
   margin: 15px auto;
   height: 36px;
-  width: 100%;
+  width: 86%;
   font-size: 20px;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   @media (min-width: $tablet-width) {
+    width: 100%;
     &:hover{
       background-color: $navigation-hover;
       color: $basic-black;

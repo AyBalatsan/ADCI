@@ -8,27 +8,32 @@
     width: 85px;
     height: 30px;
     background-color: $basic-white;
+    transition-property: bottom;
+    transition-timing-function: ease-in;
+    transition-duration: 500ms;
+    transition-delay: 700ms;
   }
 }
-.toggle__button-left {
+.toggle__button {
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 12px;
-    left: 20px;
     width: 25px;
     height: 2px;
     background-color: $basic-black;
-    transform: rotate(-38deg);
-  }
-}
-.toggle__button-right {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 12px;
-    right: 20px;
-    width: 25px;
-    height: 2px;
-    background-color: $basic-black;
-    transform: rotate(38deg);
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 200ms;
+    &--left {
+      left: 20px;
+      transform: rotate(-38deg);
+      transition-delay: 550ms;
+
+    }
+    &--right{
+      right: 20px;
+      transform: rotate(38deg);
+      transition-delay: 550ms;
+    }
   }
 }

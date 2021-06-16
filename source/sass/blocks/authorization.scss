@@ -1,23 +1,45 @@
 .authorization {
-  display: none;
-  margin-top: 15px;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  min-width: 85%;
+  height: auto;
+  background-color: $bgc;
+  border: 2px solid $new-push;
+  transition: all 1.5s ease-in-out;
   @media (min-width: $tablet-width) {
-    position: fixed;
-    top: 350px;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
+    min-width: 595px;
     width: 595px;
     height: 420px;
-    background-color: $bgc;
-    z-index: 10;
+    border: none;
   }
   @media (min-width: $desktop-width) {
     top: 430px;
     height: 360px;
+    width: 595px;
+  }
+  &--active{
+    visibility: visible;
+    opacity: 1;
+    transition: all 700ms ease-in-out;
   }
 }
-.authorization--active {
-  display: block;
+.authorization__wrapper{
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    width: 595px;
+  }
+  @media (min-width: $desktop-width) {
+  }
 }
 .authorization__title {
   display: none;
@@ -40,37 +62,23 @@
     height: 20px;
   }
 }
-.authorization__button-left{
+.authorization__close-button{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 25px;
+  height: 2px;
+  background-color: $basic-white;
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    width: 25px;
-    height: 2px;
-    background-color: $basic-white;
+
+  }
+  @media (min-width: $desktop-width) {
+    width: 30px;
+  }
+  &--left{
     transform: rotate(-45deg);
   }
-  @media (min-width: $desktop-width) {
-    width: 30px;
-  }
-}
-.authorization__button-right{
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    width: 25px;
-    height: 2px;
-    background-color: $basic-white;
+  &--right{
     transform: rotate(45deg);
-  }
-  @media (min-width: $desktop-width) {
-    width: 30px;
-  }
-}
-.authorization__wrapper{
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
   }
 }

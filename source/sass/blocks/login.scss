@@ -1,11 +1,10 @@
 .login {
   margin-bottom: 16px;
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding-left: 10px;
+    margin: 0 auto;
   }
   @media (min-width: $desktop-width) {
-   padding-left: 78px;
+
   }
 }
 .login__title {
@@ -18,21 +17,16 @@
     margin-top: 20px;
     margin-bottom: 14px;
     font-size:  18px;
-
   }
 }
 .login__form {
-  display: none;
+  display: block;
   @media (min-width: $tablet-width) {
-    display: block;
   }
   @media (min-width: $desktop-width) {
     width: 185px;
     overflow: hidden;
   }
-}
-.visible .login__form {
-  display: block;
 }
 .login__data {
   display: block;
@@ -40,7 +34,7 @@
   border: none;
   border-radius: 5px;
   height: 36px;
-  min-width: 280px;
+  min-width: 86%;
   padding-left: 10px;
   @media (min-width: $desktop-width) {
     min-width: 160px;
@@ -57,12 +51,13 @@
   display: block;
   margin: 15px auto;
   height: 36px;
-  width: 100%;
+  width: 86%;
   font-size: 20px;
   text-transform: uppercase;
   border-radius: 5px;
   border: none;
   @media (min-width: $tablet-width) {
+    width: 100%;
     &:hover{
       background-color: $navigation-hover;
       color: $basic-black;
@@ -83,6 +78,10 @@
 }
 .login__reminder {
   @include a-none ($other-title);
+  margin-left: 10%;
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
   @media (min-width: $desktop-width) {
     text-transform: none;
     font-size: 12px;

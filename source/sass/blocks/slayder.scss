@@ -14,3 +14,32 @@
     z-index: 1;
   }
 }
+.slayder__avtive--toggle .toggle{
+  @media (min-width: $tablet-width) {
+    bottom: 157px;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 500ms;
+
+  }
+}
+.slayder__avtive--toggle .toggle__button--left {
+  @media (min-width: $tablet-width) {
+    transform: rotate(38deg);
+    transition-delay: 550ms;
+  }
+}
+.slayder__avtive--toggle .toggle__button--right {
+  @media (min-width: $tablet-width) {
+    transform: rotate(-38deg);
+    transition-delay: 550ms;
+  }
+}
+.slayder__avtive--toggle .inform-block{
+  visibility: visible;
+  opacity: 1;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1.2s;
+  transition-delay: 1s;
+}
