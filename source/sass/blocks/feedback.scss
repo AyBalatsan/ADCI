@@ -19,6 +19,7 @@
     grid-gap: 15px 25px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
   }
   @media (min-width: $desktop-width){
     display: flex;
@@ -40,6 +41,10 @@
     margin-top: 0;
     font-size: 12px;
   }
+  &--link{
+    color: $basic-white;
+    text-decoration: none;
 
+  }
 }
 

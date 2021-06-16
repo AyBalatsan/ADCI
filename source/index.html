@@ -58,12 +58,12 @@
           <h2 class="block-text__title">Lampadari contemporanei</h2>
           <p class="block-text__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
         </div>
-        <div class="toggle-round">
+        <button class="toggle-round" type="submit">
           <div class="toggle-round__item" id="1"></div>
           <div class="toggle-round__item" id="2"></div>
           <div class="toggle-round__item" id="3"></div>
-        </div>
-        <div class="toggle"><span class="toggle__button toggle__button--left"></span><span class="toggle__button toggle__button--right"></span></div>
+        </button>
+        <button class="toggle" type="submit"><span class="toggle__button toggle__button--left"></span><span class="toggle__button toggle__button--right"></span></button>
         <ul class="inform-block">
           <li class="inform-block__item inform-block__item--color-first">
             <h3 class="inform-block__title">Stai pensando ad un progetto?</h3>
@@ -128,7 +128,7 @@
           <p class="feedback__title">0423.123456</p>
         </li>
         <li class="feedback__item">
-          <p class="feedback__title">info@mmlampadari.mm</p>
+          <p class="feedback__title"><a class=" feedback__title--link" href="mailto:info@mmlampadari.mm">info@mmlampadari.mm</a></p>
         </li>
         <li class="feedback__item">
           <p class="feedback__title">P.IVA 04123456789</p>
@@ -169,7 +169,7 @@
   </footer>
   <section  class="authorization">
     <h2 class="authorization__title">AREA RISERVATA</h2>
-    <a class="authorization__close" href="#"><span class="authorization__close-button authorization__close-button--left"></span><span class="authorization__close-button authorization__close-button--right"></span></a>
+    <button class="authorization__close"><span class="authorization__close-button authorization__close-button--left"></span><span class="authorization__close-button authorization__close-button--right"></span></button>
     <div class="authorization__wrapper">
       <div class="login">
         <h3 class="login__title">ACCEDI</h3>
@@ -196,7 +196,7 @@
       </div>
     </div>
   </section>
-  <!-- <div class="after-modal"></div> -->
+  <div class="after-modal"></div>
   <script src="js/script.js" type="module"></script>
 </body>
 </html>

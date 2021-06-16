@@ -44,7 +44,7 @@
   font-weight: 700;
   font-family: 'OpenSans';
   @media (min-width: $tablet-width) {
-    font-family: 'Myriad Pro';
+    font-family: 'OpenSans';
     &:hover{
       color: $navigation-hover;
     }
